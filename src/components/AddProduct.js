@@ -19,17 +19,23 @@ class AddProduct extends Component{
 
     render(){
         return(
-            <form onSubmit={this.onSubmit}>
+            <form className="form-inline" onSubmit={this.onSubmit}>
                 <h3>Add Product</h3>
+                <div className="form-group">
                 <input type="text"
+                       className="form-control"
                        placeholder="Name"
                        ref={nameInput=> this.nameInput = nameInput}
                        />
+                    {`   `}
                 <input type="text"
+                       className="form-control"
                        placeholder="Price"
                        ref={priceInput=> this.priceInput = priceInput}
                        />
-                <button>Add</button>
+                    {`   `}
+                <button className="btn btn-primary">Add</button>
+                </div>
                 <hr />
             </form>
         )

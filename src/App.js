@@ -111,13 +111,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App  col-sm-12 container">
         <h1>Products Manager</h1>
           <AddProduct
             onAdd={this.onAdd}
           />
+          <div className="">
           {this.state.products.map(product=> {
               return(
+
                   <ProductItem
                       key={product.name}
                       {...product}/*... passa todo o conteúdo do state para o componente*/
@@ -126,6 +128,7 @@ class App extends Component {
                   />
               )
           })}
+          </div>
       </div>
     );
   }
