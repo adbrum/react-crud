@@ -51,7 +51,7 @@ class ProductItem extends Component {
                                    className="form-control"
                                    ref={priceInput => this.priceInput = priceInput}
                                    defaultValue={price}/>
-                            <button>Save</button>
+                            <button className="btn btn-primary">Save</button>
                             </div>
                         </form>
                         </div>)
